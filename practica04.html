@@ -31,19 +31,21 @@
 
     <script>
         const app= document.getElementById("app");
-        const url = "https://picsum.photos/id/";
-        const size = "/200/200";
-        const Picture = (parametros,nombre)=>{
-            let src=url+parametros+size
-            console.log(src);
+        const url="https://picsum.photos/id/";
+        const size="/200/200";
+        const picture=(parametros, nombre)=>{
+            let src=url+parametros.id+size;
+            console.log(src);   
             return `
             <figure>
-                <img src="${src}">
-                <figurecaption>$(nombre)</figurecaption>
+               <img src="${src}"> 
+               <figcaption>${parametros.nombre}</figcaption>
             </figure>
-        `
+            `
+            
         }
-        app.innerHTML=Picture("10","John");
+        
+        app.innerHTML=Picture({id:"10",nombre:"John"});
 
 
     </script>
