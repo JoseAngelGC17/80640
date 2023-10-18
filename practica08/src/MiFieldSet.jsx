@@ -1,4 +1,4 @@
-function MilFieldSet(props) {
+function MiFieldSet(props) {
     const{titulo,tx1,txt2}=props
     return (
         <>
@@ -12,4 +12,4 @@ function MilFieldSet(props) {
         </>
     )
 }
-export default MilFieldSet
+export default MiFieldSet
